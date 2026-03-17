@@ -3,6 +3,6 @@ window.CONFIG = {
   CONTACT_EMAIL: "mhendricks1290@gmail.com",
   BOOKING_URL: "",
   BRAND_NAME: "Operator Proof Cockpit Pilot",
-  PRICE_LABEL: "$1,500 one-time pilot",
+  PRICE_LABEL: "$79.99 / month",
   GITHUB_PAGES_BASE_PATH: "",
 };

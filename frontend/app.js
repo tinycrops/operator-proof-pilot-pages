@@ -2,8 +2,8 @@
   const config = window.CONFIG || {};
   const stripeLink = typeof config.STRIPE_PAYMENT_LINK === "string" ? config.STRIPE_PAYMENT_LINK.trim() : "";
   const contactEmail = typeof config.CONTACT_EMAIL === "string" ? config.CONTACT_EMAIL.trim() : "";
-  const brandName = config.BRAND_NAME || "Operator Proof Pilot";
-  const priceLabel = config.PRICE_LABEL || "$1,500 one-time pilot";
+  const brandName = config.BRAND_NAME || "Operator Proof Cockpit Pilot";
+  const priceLabel = config.PRICE_LABEL || "$79.99 / month";
 
   function byId(id) {
     return document.getElementById(id);
@@ -32,12 +32,14 @@
   }
 
   function buildMailtoUrl(form) {
-    const subject = encodeURIComponent("Operator Proof Pilot intake");
+    const subject = encodeURIComponent("Operator Proof Cockpit intake");
     const body = encodeURIComponent(
       [
         "Name: " + form.get("name"),
         "Company: " + form.get("company"),
         "Email: " + form.get("email"),
+        "Company/app to prioritize: " + form.get("company_target"),
+        "Existing URL: " + form.get("company_url"),
         "",
         "Workflow to expose:",
         form.get("workflow"),
