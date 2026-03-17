@@ -2,9 +2,6 @@
   const config = window.CONFIG || {};
   const stripeLink = typeof config.STRIPE_PAYMENT_LINK === "string" ? config.STRIPE_PAYMENT_LINK.trim() : "";
   const contactEmail = typeof config.CONTACT_EMAIL === "string" ? config.CONTACT_EMAIL.trim() : "";
-  const bookingUrl = typeof config.BOOKING_URL === "string" ? config.BOOKING_URL.trim() : "";
-  const bookingSuccessUrl =
-    typeof config.BOOKING_SUCCESS_URL === "string" ? config.BOOKING_SUCCESS_URL.trim() : "./booked.html";
   const brandName = config.BRAND_NAME || "Operator Proof Pilot";
   const priceLabel = config.PRICE_LABEL || "$1,500 one-time pilot";
 
@@ -71,13 +68,6 @@
   if (checkoutReady) {
     setHref("buy-now", stripeLink);
   }
-
-  const bookingReady = bookingUrl && bookingUrl.startsWith("http");
-  show("booking-link-wrap", bookingReady);
-  if (bookingReady) {
-    setHref("booking-link", bookingUrl);
-  }
-  setHref("booking-success-link", bookingSuccessUrl);
 
   const form = byId("intake-form");
   const status = byId("intake-status");
