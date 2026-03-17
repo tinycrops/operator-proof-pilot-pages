@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Proof Pilot</title>
+    <meta
+      name="description"
+      content="Buy the Operator Proof Pilot, then complete onboarding so we can ship your first dashboard action loop fast."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="eyebrow">Shippable customer onboarding</div>
+        <h1 id="brand-name">Operator Proof Pilot</h1>
+        <p class="lede">
+          Buy the pilot, then tell us one workflow, one operator, and one action worth exposing.
+          We turn that into a live dashboard, a real state-changing loop, and a replayable proof brief.
+        </p>
+
+        <div class="hero-grid">
+          <div class="stack">
+            <div class="signal">
+              The fastest way to revenue is selling the thing we can fulfill right now:
+              an operator-facing dashboard with one live action loop and one proof-backed result.
+            </div>
+
+            <div class="panel">
+              <h2>What you buy</h2>
+              <ul>
+                <li>A customer-specific operator dashboard surface.</li>
+                <li>One real action loop wired to visible state change.</li>
+                <li>One proof run with before/after evidence.</li>
+                <li>A replay brief your team can review and share.</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="cta-box">
+            <div class="eyebrow">Offer</div>
+            <h2 id="brand-name-2">Operator Proof Pilot</h2>
+            <div class="price" id="price-label">$1,500 one-time pilot</div>
+            <p class="mini">
+              After payment, complete the intake below. We use it to scope the first dashboard loop and ship fast.
+            </p>
+            <p>
+              <a id="buy-now" class="button primary" href="#" hidden>Buy now with Stripe</a>
+              <span id="buy-disabled" class="button disabled" hidden>Set Stripe link in config.js</span>
+            </p>
+            <p class="mini" id="booking-link-wrap" hidden>
+              Want to talk first?
+              <a id="booking-link" href="#" class="button secondary">Book a kickoff call</a>
+            </p>
+            <p class="mini">
+              Need a redirect page after scheduling?
+              <a id="booking-success-link" href="./booked.html">Use the booked page</a>
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section grid-3">
+        <article class="panel">
+          <div class="eyebrow">Step 1</div>
+          <h3>Pay</h3>
+          <ul>
+            <li>Use the Stripe button above.</li>
+            <li>We keep the pilot tightly scoped.</li>
+            <li>No open-ended retainer on day one.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <div class="eyebrow">Step 2</div>
+          <h3>Submit intake</h3>
+          <ul>
+            <li>Name the workflow that matters right now.</li>
+            <li>Name the machine, service, or API to observe.</li>
+            <li>Name the action you want visible from the page.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <div class="eyebrow">Step 3</div>
+          <h3>Receive the first loop</h3>
+          <ul>
+            <li>Dashboard link</li>
+            <li>Proof brief</li>
+            <li>Replay steps</li>
+            <li>Next expansion recommendation</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section grid-2">
+        <article class="panel">
+          <div class="eyebrow">What happens after payment</div>
+          <h2>We ship the smallest useful loop first</h2>
+          <ul>
+            <li>We mirror your first live dashboard surface.</li>
+            <li>We wire one operator action to visible state change.</li>
+            <li>We run proof and capture before/after evidence.</li>
+            <li>We hand back a replayable, shareable artifact.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <div class="eyebrow">What we need from you</div>
+          <h2>Enough detail to ship, not a long consulting brief</h2>
+          <ul>
+            <li>One operator</li>
+            <li>One workflow</li>
+            <li>One system to observe</li>
+            <li>One state-changing action</li>
+            <li>One success signal</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section intake">
+        <div class="eyebrow">Customer intake</div>
+        <h2>Start onboarding</h2>
+        <p class="lede">
+          This sends us a structured intake so we can build the first loop without wasting time.
+        </p>
+        <form id="intake-form">
+          <div class="grid-2">
+            <label>
+              Your name
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" required>
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Best email
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Primary operator
+              <input type="text" name="operator" placeholder="Who will use the first version?" required>
+            </label>
+          </div>
+
+          <label>
+            Workflow to expose
+            <textarea name="workflow" placeholder="What live work should the dashboard make visible?" required></textarea>
+          </label>
+
+          <label>
+            Machine, service, or API to observe
+            <textarea name="system" placeholder="What system are we reading from?" required></textarea>
+          </label>
+
+          <label>
+            Action to take from the dashboard
+            <textarea name="action" placeholder="What should an operator click and what should change?" required></textarea>
+          </label>
+
+          <label>
+            Success signal
+            <textarea name="success" placeholder="How will you know the first pilot worked?" required></textarea>
+          </label>
+
+          <div>
+            <button class="button primary" type="submit">Send intake</button>
+          </div>
+          <p id="intake-status" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <p class="footer">
+        Static GitHub Pages frontend. If you later want saved submissions, add a private backend behind Tailscale Funnel.
+      </p>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
