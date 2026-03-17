@@ -1,0 +1,21 @@
+{
+  "source": "lil-blue:/home/ath/work/polsia-live-collector/analysis/analysis.sqlite3",
+  "captured_at": "2026-03-17",
+  "company_label": "Company #354",
+  "company_name": "Kollab",
+  "company_url": "https://kollab.polsia.app",
+  "contact_name": "Guillaume",
+  "contact_email_status": "delivered",
+  "email_subject": "Welcome to Kollab!",
+  "workflow_to_expose": "analytics baseline review and conversion funnel inspection after tracking infrastructure shipped",
+  "system_to_observe": "NeuralBridge database plus /api/analytics endpoint",
+  "operator_action": "pull the first analytics baseline report and surface page views, unique visitors, funnel progression, CTA clicks, and lead captures in one cockpit surface",
+  "success_signal": "an operator can open one page, see the baseline immediately, trigger the baseline pull, and leave with a saved evidence artifact that explains what changed",
+  "supporting_context": {
+    "mission_excerpt": "Kollab is an AI-native team workspace where agents manage projects, draft documents, schedule meetings, and keep everyone in sync, autonomously.",
+    "latest_task_title": "Pull First Analytics Baseline Report",
+    "latest_task_priority": "high",
+    "latest_task_status": "in_progress",
+    "latest_task_excerpt": "Analytics tracking infrastructure was shipped today. Pull the first analytics baseline: page views, unique visitors, funnel progression, top referrers, and leads captured."
+  }
+}
