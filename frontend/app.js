@@ -32,7 +32,7 @@
   }
 
   function buildMailtoUrl(form) {
-    const subject = encodeURIComponent("Operator Proof Cockpit intake");
+    const subject = encodeURIComponent(brandName + " intake");
     const body = encodeURIComponent(
       [
         "Name: " + form.get("name"),
