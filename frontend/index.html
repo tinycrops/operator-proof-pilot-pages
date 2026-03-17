@@ -3,243 +3,80 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operator Proof Cockpit Pilot</title>
-    <meta
-      name="description"
-      content="Subscribe to the Operator Proof Cockpit for teams coordinating agent work, then point us at the company and workflow to prioritize."
-    >
+    <title>Operator Proof Cockpit</title>
+    <meta name="description" content="Turn one messy operator workflow into a live action dashboard with proof.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <main class="shell">
+    <main>
+
       <section class="hero">
-        <div class="eyebrow">For teams coordinating agent work</div>
-        <h1 id="brand-name">Operator Proof Cockpit Pilot</h1>
-        <p class="lede">
-          Turn one messy operator workflow into a live action dashboard with proof.
-          We help your team see task state, take one real action, and leave with evidence of what changed.
-        </p>
+        <span class="tag">Agent workflow tooling</span>
+        <h1 id="brand-name">Operator Proof Cockpit</h1>
+        <p class="sub">One workflow. One action. One proof.<br>We turn your messiest operator loop into a live dashboard with evidence of what changed.</p>
+        <div class="price-row">
+          <span class="price" id="price-label">$79.99 / mo</span>
+          <a id="buy-now" class="btn" href="#" hidden>Buy with Stripe</a>
+          <span id="buy-disabled" class="btn btn-disabled" hidden>Set Stripe link in config.js</span>
+        </div>
+        <p class="caption">Pay &rarr; we contact you &rarr; cockpit ships.</p>
+      </section>
 
-        <div class="hero-grid">
-          <div class="stack">
-            <div class="signal">
-              Built for small teams running multi-agent or semi-automated workflows who are tired of scattered state,
-              unclear ownership, and weak proof of what actually happened.
-            </div>
-
-            <div class="signal">
-              Built for operators who need a trustworthy control surface, not more automation theater.
-              The value is clear state, decisive action, and evidence you can review afterward.
-            </div>
-
-            <div class="signal">
-              We already operate from continuously refreshed company, task, email, document, and link intelligence.
-              Onboarding is often less about explaining everything from scratch and more about telling us what to prioritize first.
-            </div>
-
-            <div class="panel">
-              <h2>What this product does</h2>
-              <ul>
-                <li>Shows live workflow and task state in one place.</li>
-                <li>Lets an operator take one real action from the page.</li>
-                <li>Generates proof of what changed after the action.</li>
-                <li>Preserves a replayable brief your team can review and share.</li>
-              </ul>
-            </div>
-          </div>
-
-          <aside class="cta-box">
-            <div class="eyebrow">Offer</div>
-            <h2 id="brand-name-2">Operator Proof Cockpit Pilot</h2>
-            <div class="price" id="price-label">$79.99 / month</div>
-            <p class="mini">
-              Start small: one operator, one workflow, one system, one state-changing action. Monthly recurring keeps the scope honest.
-            </p>
-            <p>
-              <a id="buy-now" class="button primary" href="#" hidden>Buy now with Stripe</a>
-              <span id="buy-disabled" class="button disabled" hidden>Set Stripe link in config.js</span>
-            </p>
-            <p class="mini">
-              After payment, we contact you directly at the email used for checkout and move you into intake immediately.
-            </p>
-          </aside>
+      <section class="steps">
+        <div class="step">
+          <span class="step-n">01</span>
+          <h3>Pay</h3>
+          <p>Stripe receipt is instant. We reach out to your checkout email immediately.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">02</span>
+          <h3>Point</h3>
+          <p>Name the company, the workflow in pain, and the one action your operator needs to take.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">03</span>
+          <h3>Ship</h3>
+          <p>Live cockpit link, proof brief, and a replayable summary your team can review.</p>
         </div>
       </section>
 
-      <section class="section grid-3">
-        <article class="panel">
-          <div class="eyebrow">Step 1</div>
-          <h3>Subscribe now</h3>
-          <ul>
-            <li>Use the Stripe button above.</li>
-            <li>You receive the Stripe receipt immediately.</li>
-            <li>We use that payment event as the trigger to contact you directly.</li>
-          </ul>
-        </article>
-        <article class="panel">
-          <div class="eyebrow">Step 2</div>
-          <h3>Point us at the right company and workflow</h3>
-          <ul>
-            <li>Name the company, app, or account we should prioritize.</li>
-            <li>Name the workflow that creates real operator pain right now.</li>
-            <li>Name the action the operator needs to take from the page.</li>
-          </ul>
-        </article>
-        <article class="panel">
-          <div class="eyebrow">Step 3</div>
-          <h3>Receive the first loop</h3>
-          <ul>
-            <li>Live cockpit link</li>
-            <li>Proof brief</li>
-            <li>Replay steps</li>
-            <li>Recommendation for the next loop to productize</li>
-          </ul>
-        </article>
+      <section class="props">
+        <span class="prop">Live task state</span>
+        <span class="prop">One real action per loop</span>
+        <span class="prop">Proof of what changed</span>
+        <span class="prop">Replayable brief</span>
       </section>
 
-      <section class="section grid-2">
-        <article class="panel">
-          <div class="eyebrow">What happens after payment</div>
-          <h2>Payment triggers direct outreach and onboarding</h2>
-          <ul>
-            <li>Stripe confirms the purchase and sends the receipt.</li>
-            <li>We contact the buyer directly using the checkout email.</li>
-            <li>We match your intake to the operating context we already maintain when possible.</li>
-            <li>We ship the first cockpit loop and proof artifact.</li>
-          </ul>
-        </article>
-
-        <article class="panel">
-          <div class="eyebrow">Who this is for</div>
-          <h2>Teams coordinating work across too many surfaces</h2>
-          <ul>
-            <li>Small teams coordinating agent or semi-automated workflows.</li>
-            <li>Operators working from logs, scripts, chat, and memory.</li>
-            <li>Teams who need clearer ownership and proof of what changed.</li>
-            <li>Teams willing to start with one painful workflow first.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="section grid-2">
-        <article class="panel">
-          <div class="eyebrow">First workflow we support best</div>
-          <h2>Dispatch and execution review for agent teams</h2>
-          <ul>
-            <li>Inspect task state.</li>
-            <li>Claim, complete, or fail work.</li>
-            <li>Run proof after action.</li>
-            <li>Compare runs over time.</li>
-            <li>Keep a replayable evidence brief.</li>
-          </ul>
-        </article>
-
-        <article class="panel">
-          <div class="eyebrow">What makes it worth paying for</div>
-          <h2>Not just visibility, but action plus proof</h2>
-          <ul>
-            <li>The operator can do something real from the page.</li>
-            <li>The system shows measurable change after the action.</li>
-            <li>The team gets an artifact they can replay and discuss.</li>
-            <li>The next product decision comes from shipped evidence, not guesswork.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="section grid-2">
-        <article class="panel">
-          <div class="eyebrow">Why subscribe now</div>
-          <h2>Immediate productized start</h2>
-          <ul>
-            <li>No discovery maze before payment.</li>
-            <li>No vague AI strategy deliverable.</li>
-            <li>No generic outbound automation bundle.</li>
-            <li>Just one paid workflow loop we can ship and prove, then improve month by month.</li>
-          </ul>
-        </article>
-
-        <article class="panel">
-          <div class="eyebrow">What we sell against</div>
-          <h2>Operational authority over hand-wavy automation</h2>
-          <ul>
-            <li>Many tools generate ideas, content, or workflow noise.</li>
-            <li>We focus on operational action, state change, and evidence.</li>
-            <li>The artifact is a cockpit plus proof, not just a prompt, report, or lead list.</li>
-            <li>That makes the result easier to trust, share, and repeat.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="section intake">
-        <div class="eyebrow">Customer intake</div>
-        <h2>Start onboarding for your first cockpit loop</h2>
-        <p class="lede">
-          This gives us enough detail to ship one useful operator workflow fast. If we already have relevant company context on our side, we use this to confirm and prioritize instead of starting from zero.
-        </p>
+      <section class="intake">
+        <span id="brand-name-2" hidden></span>
+        <h2>Start intake</h2>
+        <p class="sub">Already paid? Fill this out and we move fast.</p>
         <form id="intake-form">
-          <div class="grid-2">
-            <label>
-              Your name
-              <input type="text" name="name" required>
-            </label>
-            <label>
-              Company
-              <input type="text" name="company" required>
-            </label>
+          <div class="row-2">
+            <label>Name<input type="text" name="name" required></label>
+            <label>Company<input type="text" name="company" required></label>
           </div>
-
-          <div class="grid-2">
-            <label>
-              Best email
-              <input type="email" name="email" required>
-            </label>
-            <label>
-              Primary operator
-              <input type="text" name="operator" placeholder="Who will use the first version?" required>
-            </label>
+          <div class="row-2">
+            <label>Email<input type="email" name="email" required></label>
+            <label>Primary operator<input type="text" name="operator" placeholder="Who uses the first version?" required></label>
           </div>
-
-          <div class="grid-2">
-            <label>
-              Company or app to prioritize
-              <input type="text" name="company_target" placeholder="Company name, app name, or account slug" required>
-            </label>
-            <label>
-              Existing URL we should match
-              <input type="text" name="company_url" placeholder="App URL, site URL, or product link if you have it">
-            </label>
+          <div class="row-2">
+            <label>App or company to target<input type="text" name="company_target" required></label>
+            <label>URL (if you have it)<input type="text" name="company_url"></label>
           </div>
-
-          <label>
-            Workflow to expose
-            <textarea name="workflow" placeholder="What operator workflow causes pain right now?" required></textarea>
-          </label>
-
-          <label>
-            Machine, service, or API to observe
-            <textarea name="system" placeholder="What system should the cockpit read from first?" required></textarea>
-          </label>
-
-          <label>
-            Action to take from the dashboard
-            <textarea name="action" placeholder="What should the operator click and what state should change?" required></textarea>
-          </label>
-
-          <label>
-            Success signal
-            <textarea name="success" placeholder="How will your team know this first cockpit loop was worth paying for?" required></textarea>
-          </label>
-
-          <div>
-            <button class="button primary" type="submit">Send intake</button>
-          </div>
+          <label>Workflow in pain<textarea name="workflow" placeholder="What operator loop hurts right now?" required></textarea></label>
+          <label>System to observe<textarea name="system" placeholder="What should the cockpit read from?" required></textarea></label>
+          <label>Action to take<textarea name="action" placeholder="What does the operator click, and what should change?" required></textarea></label>
+          <label>Success signal<textarea name="success" placeholder="How will you know this was worth paying for?" required></textarea></label>
+          <button class="btn" type="submit">Send intake</button>
           <p id="intake-status" class="status" aria-live="polite"></p>
         </form>
       </section>
 
-      <p class="footer">
-        Monthly productized cockpit for teams coordinating agent work. We can anchor onboarding to live company, task, email, and document context we already maintain.
-      </p>
+      <footer>Monthly cockpit for teams coordinating agent work. One workflow, one action, one proof per loop.</footer>
     </main>
 
     <script src="./config.js"></script>
